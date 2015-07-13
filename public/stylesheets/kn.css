@@ -1,0 +1,88 @@
+body {
+	font-family: 'Microsoft YaHei';
+	font-size: 9px;
+    background: #e3e3de;
+	vertical-align: middle
+}
+.container-box {
+	position:relative;
+	width: 360px;
+	margin: 0 auto;
+	border: 0px solid black;
+	
+}
+.container-head{
+	position:fixed;
+	z-index:10;
+	width:360px;
+	height:52px;
+	background:#d61e38;
+	color:#ffffff;
+	font-size:18px;
+	font-weight:600;
+	border-radius: 0px 0px  10px 10px; 
+}
+.container-head span{
+	position:absolute;
+	top:17px;
+	left:68.5px;
+}
+.container-body{
+	position:absolute;
+	top:60.3333333px;
+}
+.cell{position:relative;}
+.cell .tail{
+	position:absolute;
+	top:35px;
+	z-index:5;
+}
+
+.cell-img{
+	border:7px solid #ffffff;
+	border-radius:7px;
+	box-shadow:7px 7px 5px #adb1b4;
+}
+.cell-img img {
+	z-index:10;
+	width: 130px;
+	height: 83.3333333px;
+}
+.album-title {
+	font-size: 18.333333px;
+	font-weight:600;
+	color: #101010;
+	margin: 13.333333px 0 12px 0;
+}
+.album-description {
+	font-size: 12px;
+	line-height:2em;
+	color: #898c8e;
+}
+.album-index img{
+	width:31px;
+	height:20.666666px;
+}
+.album-index .dy{
+	float:right;
+	margin-left:5px;
+}
+.album-index .dz{
+	float:right;
+}
+
+.cell {
+	height: 115px;
+	position: relative;
+	border: 0px solid green;
+}
+.cell .cell-img {
+	margin-left:10px;
+	float: left;
+}
+.cell .cell-content {
+	height: 110.333333px;
+	width: 158.3333333px;
+	float: left;
+	margin: 0 14.666666px 0 15px;
+}

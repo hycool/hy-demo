@@ -1,0 +1,33 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#GET     /                           controllers.Application.index()
+GET      /                           controllers.PlatController.index()
+GET      /dataTables                 controllers.PlatController.dataTables()
+GET      /highcharts_normal          controllers.PlatController.highcharts_normal()
+GET      /highcharts_inverse         controllers.PlatController.highcharts_inverse()
+GET      /morris                     controllers.PlatController.morris()
+GET      /jvectormap                 controllers.PlatController.jvectormap()
+GET	     /highmaps                   controllers.PlatController.highmaps()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+#hy demo
+GET    /demo1                       controllers.DemoController.demo1()
+GET    /demo2                       controllers.DemoController.demo2()
+GET    /demo3                       controllers.DemoController.demo3()
+GET    /demo4                       controllers.DemoController.demo4()
+GET    /demo5                       controllers.DemoController.demo5()
+GET    /demo6                       controllers.DemoController.demo6()
+GET    /cn_web                      controllers.DemoController.cn_web()
+GET    /cn_wap                      controllers.DemoController.cn_wap()
+GET    /en_web                      controllers.DemoController.en_web()
+GET    /en_wap                      controllers.DemoController.en_wap()
+GET    /pluginPage                  controllers.DemoController.pluginPage()
+GET    /webMobile                   controllers.DemoController.webMobile()
+GET    /weixin                      controllers.WeixinController.insert(signature:String,timestamp:String,nonce:String,echostr:String)
+POST   /weixin                      controllers.WeixinController.doPost()

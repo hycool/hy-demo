@@ -1,0 +1,61 @@
+body {
+	font-family: 'Microsoft YaHei';
+    background: #e3e3de;
+	vertical-align: middle;
+	font-size:12px;
+}
+
+.container-box{position:relative;}
+/*标题container-head*/
+.container-head{
+	z-index:10;
+	width:90%;
+	position:fixed;
+	text-align:center;
+	font-size:18px;
+	font-weight:700;
+	background:#d61e38;
+	color:#ffffff;
+	line-height:3em;
+	border-radius: 10px 10px  10px 10px;
+}
+/*列表体container-body*/
+.container-body{
+	position:absolute;
+	top:55px;
+}
+.cell{
+	margin-bottom:15px;
+	margin-top:10px;
+}
+/*专辑缩略图*/
+.cell-img{
+	width:120%;
+	border:7px solid #ffffff;
+	border-radius:5px;
+	box-shadow:10px 10px 1px #adb1b4;
+}
+
+.cell-img img {
+	width:100%;
+}
+/*右侧描述内容样式*/
+.album-title {
+	text-shadow:5px 5px 5px #adb1b4;
+	font-size:16.333333px;
+	color: #101010;
+	margin: 6.333333px 0 6px 0;
+}
+.album-description {
+	line-height:1.5em;
+	color: #898c8e;
+}
+/*点赞、用户图标*/
+.album-index{
+	font-size:12px;
+	text-align:center;
+}
+.album-index img{
+	width:31px;
+	height:20.666666px;
+}
