@@ -11,6 +11,8 @@ import views.html.plat.*;
 public class PlatController extends Controller {
 	
 	public static Result index(){
+		System.out.println("host="+request().host());
+		System.out.println("remoteAddress="+request().remoteAddress());
 		return ok(index.render());
 	}
 	

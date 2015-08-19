@@ -38,6 +38,12 @@ public class test {
 //		System.out.println("access_token="+at.getToken()+"\r\n"+"expiresIn="+at.getExpiresIn());
 		
 //		System.out.println(MD5Util.getMd5("kuaiya123456"));
+		String ip1="172.10.16.52";
+		String ip2="172.152.45.56";
+		System.out.println(ip1.split("\\.").length);
+		System.out.println();
+		System.out.println(ip1.substring(0,ip1.indexOf(ip1.split("\\.")[3])));
+    	System.out.println(ip2.substring(0,ip2.indexOf(ip2.split("\\.")[3])));
 	}
 
 }
