@@ -2,9 +2,13 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+#webshare
+GET      /                           controllers.WebshareController.index()
+GET      /jpaudio                    controllers.WebshareController.jpaudio()
+GET      /jpvideo                    controllers.WebshareController.jpvideo()
 # Home page
 #GET     /                           controllers.Application.index()
-GET      /                           controllers.PlatController.index()
+#GET     /                           controllers.PlatController.index()
 GET      /dataTables                 controllers.PlatController.dataTables()
 GET      /highcharts_normal          controllers.PlatController.highcharts_normal()
 GET      /highcharts_inverse         controllers.PlatController.highcharts_inverse()
